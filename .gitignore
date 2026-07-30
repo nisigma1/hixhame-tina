@@ -1,0 +1,10 @@
+.next
+.next-*
+node_modules
+out
+.wrangler
+qa
+.env*
+!.env.example
+*.log
+*.tsbuildinfo

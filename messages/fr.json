@@ -1,0 +1,206 @@
+{
+  "common": {
+    "brandLabel": "Hixhame Tina - Thérapie par ventouses",
+    "skipToContent": "Aller au contenu",
+    "chooseLanguage": "Choisir la langue",
+    "mainNavigation": "Navigation principale",
+    "mobileNavigation": "Navigation mobile",
+    "openMenu": "Ouvrir le menu",
+    "closeMenu": "Fermer le menu",
+    "themeTitle": "Changer de thème",
+    "activateDark": "Activer le thème sombre",
+    "activateLight": "Activer le thème clair",
+    "bookAppointment": "Prendre rendez-vous",
+    "womenOnly": "Réservé aux femmes",
+    "location": "Kolovicë, Pristina",
+    "whatsappMessage": "Bonjour, je souhaite réserver un rendez-vous chez Hixhame Tina."
+  },
+  "navigation": {
+    "home": "Accueil",
+    "about": "À propos",
+    "benefits": "Bienfaits",
+    "process": "Déroulement",
+    "questions": "Questions",
+    "contact": "Contact"
+  },
+  "hero": {
+    "eyebrow": "RÉSERVÉ AUX FEMMES · KOLOVICË, PRISTINA",
+    "title": "Hijama pour femmes, avec soin et discrétion.",
+    "description": "Un cadre calme, propre et discret, préparé avec attention pour chaque séance.",
+    "primaryCta": "Réserver sur WhatsApp",
+    "secondaryCta": "Appeler maintenant",
+    "trustLine": "Intimité, hygiène et attention personnalisée.",
+    "imageAlt": "Ventouses dans un environnement calme et préparé avec soin"
+  },
+  "trust": {
+    "kicker": "UNE EXPÉRIENCE CRÉÉE AVEC SOIN",
+    "title": "Intimité et attention à chaque séance.",
+    "description": "Le service est exclusivement réservé aux femmes. Chaque séance repose sur une communication claire, une attention personnalisée et le respect de votre confort.",
+    "imageAlt": "Un espace calme préparé pour une séance de ventouses",
+    "items": [
+      "Réservé aux femmes",
+      "Espace privé",
+      "Hygiène et préparation",
+      "Échange avant la séance",
+      "Attention personnalisée"
+    ]
+  },
+  "about": {
+    "kicker": "À PROPOS DE LA HIJAMA",
+    "title": "Un accompagnement serein, clair et personnalisé.",
+    "paragraphOne": "La hijama est une pratique traditionnelle fondée sur l'utilisation de ventouses, que de nombreuses personnes intègrent à leur routine personnelle de bien-être.",
+    "paragraphTwo": "Chez Hixhame Tina, chaque séance est pensée exclusivement pour les femmes, avec une attention particulière portée à l'intimité, à l'hygiène et à une communication claire.",
+    "detail": "Un espace pour poser vos questions avant de décider.",
+    "imageAlt": "Ventouses disposées sur un tissu rose dans un cadre apaisant"
+  },
+  "benefits": {
+    "kicker": "BIEN-ÊTRE & ATTENTION",
+    "title": "Des sujets de bien-être abordés avec prudence.",
+    "introduction": "Les sujets ci-dessous reflètent les raisons pour lesquelles certaines personnes s'intéressent à la hijama ; ils ne constituent aucune promesse de résultat. La hijama ne remplace ni une évaluation, ni un diagnostic, ni un traitement médical.",
+    "items": [
+      {
+        "title": "Sensation de légèreté et de bien-être",
+        "description": "Certaines personnes intègrent la hijama à leur routine comme un moment pour prendre soin d'elles."
+      },
+      {
+        "title": "Bien-être général",
+        "description": "Certaines personnes l'intègrent à une démarche personnelle et attentive de bien-être."
+      },
+      {
+        "title": "Détente et repos",
+        "description": "Le cadre calme d'une séance peut offrir un moment pour ralentir, se reposer et se détendre."
+      },
+      {
+        "title": "Tensions au niveau de la tête et du cou",
+        "description": "Certaines personnes s'intéressent à la hijama lorsqu'elles ressentent des tensions. Des symptômes persistants ou intenses nécessitent un avis médical."
+      },
+      {
+        "title": "Confort du dos",
+        "description": "Certaines personnes l'intègrent à une routine générale de bien-être axée sur le confort du dos."
+      },
+      {
+        "title": "Stress et fatigue",
+        "description": "Une séance dans un cadre calme peut offrir une courte pause face à un quotidien exigeant."
+      },
+      {
+        "title": "Inconfort des sinus",
+        "description": "Certaines personnes s'intéressent alors à la hijama. Un inconfort persistant doit être évalué par un professionnel de santé."
+      },
+      {
+        "title": "Bien-être féminin",
+        "description": "Chaque séance est organisée avec une attention particulière au confort et à l'intimité des femmes."
+      },
+      {
+        "title": "Inconforts rhumatismaux",
+        "description": "La hijama ne doit se substituer ni aux soins habituels ni à un traitement recommandé par un professionnel de santé."
+      },
+      {
+        "title": "Zone du nerf sciatique",
+        "description": "Une douleur, un engourdissement ou une faiblesse persistante nécessite l'avis d'un professionnel de santé."
+      }
+    ],
+    "disclaimer": "Les expériences varient d'une personne à l'autre. En cas de symptômes, de problème de santé ou de prise de médicaments, demandez l'avis d'un professionnel de santé qualifié avant de réserver."
+  },
+  "process": {
+    "kicker": "DÉROULEMENT",
+    "title": "De votre première question à une séance sereine.",
+    "imageAlt": "Ventouses préparées dans une pièce calme et privée",
+    "steps": [
+      {
+        "title": "Réservez votre rendez-vous",
+        "description": "Contactez-nous par téléphone ou sur WhatsApp afin de choisir ensemble un créneau adapté."
+      },
+      {
+        "title": "Échange avant la séance",
+        "description": "Avant de commencer, nous discutons brièvement de vos questions, de vos besoins et des informations importantes."
+      },
+      {
+        "title": "Séance dans un espace privé",
+        "description": "La séance se déroule dans un espace calme, propre et exclusivement réservé aux femmes."
+      }
+    ]
+  },
+  "privacy": {
+    "kicker": "INTIMITÉ · HYGIÈNE · CONFORT",
+    "title": "Chaque détail pensé pour votre confort.",
+    "description": "Une bonne expérience commence avant la séance, avec un espace préparé, une communication claire et une attention portée à ce qui vous met à l'aise.",
+    "items": [
+      "Espace réservé aux femmes",
+      "Intimité pendant la séance",
+      "Espace propre et préparé",
+      "Attention personnalisée"
+    ],
+    "note": "Vous pouvez nous poser vos questions avant de réserver. Nous sommes là pour rendre le processus clair et rassurant.",
+    "action": "Poser une question"
+  },
+  "faq": {
+    "kicker": "QUESTIONS FRÉQUENTES",
+    "title": "Des repères clairs avant de réserver.",
+    "actionPrompt": "Vous n'avez pas trouvé votre réponse ? Écrivez-nous directement.",
+    "actionIdle": "Envoyer un message",
+    "actionLoading": "Préparation en cours...",
+    "actionSuccess": "Ouverture de WhatsApp",
+    "whatsappMessage": "Bonjour, je souhaite poser une question au sujet de Hixhame Tina.",
+    "items": [
+      {
+        "question": "Le service est-il exclusivement réservé aux femmes ?",
+        "answer": "Oui. Hixhame Tina est un espace exclusivement dédié aux femmes."
+      },
+      {
+        "question": "Comment puis-je prendre rendez-vous ?",
+        "answer": "Vous pouvez nous appeler ou nous écrire sur WhatsApp. Nous trouverons ensemble un créneau adapté."
+      },
+      {
+        "question": "Où se trouve Hixhame Tina ?",
+        "answer": "Nous sommes à Kolovicë, Pristina. Les détails du rendez-vous sont confirmés lors de la réservation."
+      },
+      {
+        "question": "Combien de temps dure une séance ?",
+        "answer": "La durée peut varier selon la séance et sera confirmée au moment de la réservation."
+      },
+      {
+        "question": "Comment dois-je me préparer ?",
+        "answer": "Vous pouvez nous envoyer toutes vos questions avant le rendez-vous. Nous vous communiquerons clairement les indications nécessaires."
+      },
+      {
+        "question": "Puis-je poser des questions avant de réserver ?",
+        "answer": "Bien sûr. Écrivez-nous sur WhatsApp ou appelez-nous, sans aucune obligation de réservation."
+      }
+    ]
+  },
+  "booking": {
+    "kicker": "RÉSERVATION SIMPLE",
+    "title": "Réservez un moment rien que pour vous.",
+    "description": "Pour toute question ou réservation, contactez-nous directement par téléphone ou sur WhatsApp.",
+    "primaryCta": "Réserver sur WhatsApp"
+  },
+  "footer": {
+    "contactTitle": "Contact",
+    "navigationTitle": "Navigation",
+    "aboutLink": "À propos",
+    "benefitsLink": "Bienfaits",
+    "questionsLink": "Questions fréquentes",
+    "disclaimer": "Les informations présentées sur ce site sont générales et ne remplacent pas l’avis, le diagnostic ou le traitement d’un professionnel de santé qualifié. Les expériences peuvent varier d’une personne à l’autre.",
+    "copyright": "© 2026 Hixhame Tina. Tous droits réservés."
+  },
+  "metadata": {
+    "title": "Hixhame Tina | Hijama pour femmes à Pristina",
+    "description": "Hixhame Tina propose une thérapie par ventouses réservée aux femmes à Kolovicë, Pristina, dans un environnement calme, privé et propre.",
+    "socialImageAlt": "Hixhame Tina - Hijama pour femmes à Pristina",
+    "businessDescription": "Hijama et thérapie par ventouses exclusivement réservées aux femmes à Kolovicë, Pristina, dans un environnement calme et privé.",
+    "slogan": "Hijama et thérapie par ventouses pour femmes à Pristina",
+    "audience": "Un service exclusivement réservé aux femmes",
+    "hijamaService": "Hijama pour femmes",
+    "cuppingService": "Thérapie par ventouses"
+  },
+  "root": {
+    "title": "Choisir la langue",
+    "description": "Nous vous redirigeons vers la version adaptée du site Hixhame Tina.",
+    "open": "Ouvrir le site en français"
+  },
+  "notFound": {
+    "title": "Page introuvable",
+    "description": "La page demandée n'existe pas ou a été déplacée.",
+    "action": "Retour à l'accueil"
+  }
+}

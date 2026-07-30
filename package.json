@@ -1,0 +1,32 @@
+{
+  "name": "hixhame-tina",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "prebuild": "npm run i18n:audit",
+    "build": "next build",
+    "postbuild": "node scripts/prune-next-runtime.cjs",
+    "start": "next start",
+    "lint": "eslint .",
+    "i18n:audit": "node scripts/i18n-audit.cjs",
+    "lighthouse": "node scripts/lighthouse-local.cjs",
+    "qa": "node scripts/qa-local.cjs",
+    "smoke": "node scripts/live-smoke.cjs"
+  },
+  "dependencies": {
+    "next": "^15.4.4",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3.3.1",
+    "@types/node": "^22.16.5",
+    "@types/react": "^19.1.8",
+    "@types/react-dom": "^19.1.6",
+    "eslint": "^9.31.0",
+    "eslint-config-next": "^15.4.4",
+    "playwright-core": "^1.62.0",
+    "typescript": "^5.8.3"
+  }
+}

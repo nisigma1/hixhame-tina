@@ -1,0 +1,206 @@
+{
+  "common": {
+    "brandLabel": "Hixhame Tina - Kupa terapisi",
+    "skipToContent": "İçeriğe geç",
+    "chooseLanguage": "Dil seçin",
+    "mainNavigation": "Ana menü",
+    "mobileNavigation": "Mobil menü",
+    "openMenu": "Menüyü aç",
+    "closeMenu": "Menüyü kapat",
+    "themeTitle": "Temayı değiştir",
+    "activateDark": "Koyu temayı etkinleştir",
+    "activateLight": "Açık temayı etkinleştir",
+    "bookAppointment": "Randevu al",
+    "womenOnly": "Sadece kadınlara özel",
+    "location": "Kolovicë, Priştine",
+    "whatsappMessage": "Merhaba, Hixhame Tina’da randevu almak istiyorum."
+  },
+  "navigation": {
+    "home": "Ana sayfa",
+    "about": "Hakkımızda",
+    "benefits": "Faydaları",
+    "process": "Süreç",
+    "questions": "Sorular",
+    "contact": "İletişim"
+  },
+  "hero": {
+    "eyebrow": "SADECE KADINLARA ÖZEL · KOLOVICË, PRİŞTİNE",
+    "title": "Kadınlara özel hacamat, özenli ve mahrem bir yaklaşımla.",
+    "description": "Her seans için özenle hazırlanan sakin, temiz ve özel bir ortam.",
+    "primaryCta": "WhatsApp’tan randevu al",
+    "secondaryCta": "Şimdi ara",
+    "trustLine": "Mahremiyet, hijyen ve kişisel ilgi.",
+    "imageAlt": "Sakin ve özenle hazırlanmış bir ortamda kupa terapisi bardakları"
+  },
+  "trust": {
+    "kicker": "ÖZENLE HAZIRLANAN BİR DENEYİM",
+    "title": "Her seansta mahremiyet ve özen.",
+    "description": "Hizmet yalnızca kadınlara özeldir. Her seans, açık iletişim, kişisel ilgi ve rahatlığınıza saygı çerçevesinde gerçekleşir.",
+    "imageAlt": "Kupa terapisi için hazırlanmış sakin bir ortam",
+    "items": [
+      "Sadece kadınlara özel",
+      "Özel ortam",
+      "Hijyen ve hazırlık",
+      "Seans öncesi iletişim",
+      "Kişisel ilgi"
+    ]
+  },
+  "about": {
+    "kicker": "HACAMAT HAKKINDA",
+    "title": "Sakin, açık ve kişiye özel bir yaklaşım.",
+    "paragraphOne": "Hacamat, birçok kişinin kişisel iyi oluş rutinine dahil ettiği geleneksel bir kupa uygulamasıdır.",
+    "paragraphTwo": "Hixhame Tina’da her seans yalnızca kadınlar için planlanır; mahremiyete, hijyene ve açık iletişime özen gösterilir.",
+    "detail": "Karar vermeden önce sorularınız için alan.",
+    "imageAlt": "Sakin bir ortamda pembe kumaş üzerine yerleştirilmiş kupa terapisi bardakları"
+  },
+  "benefits": {
+    "kicker": "İYİ YAŞAM & ÖZEN",
+    "title": "İyi oluşla ilgili başlıklar, özenli ve temkinli bir dille.",
+    "introduction": "Aşağıdaki başlıklar, bazı kişilerin hacamatla neden ilgilendiğini açıklar; belirli bir sonuç vaat etmez. Hacamat tıbbi değerlendirme, tanı veya tedavinin yerini almaz.",
+    "items": [
+      {
+        "title": "Hafiflik ve iyi oluş hissi",
+        "description": "Bazı kişiler hacamatı kişisel iyi oluş rutinlerinin bir parçası olarak görür."
+      },
+      {
+        "title": "Genel iyi oluş",
+        "description": "Bazı kişiler bunu kendilerine özen gösterdikleri bilinçli bir rutine dahil eder."
+      },
+      {
+        "title": "Rahatlama ve dinlenme",
+        "description": "Seansın sakin ortamı, durmak, dinlenmek ve gevşemek için bir an sunabilir."
+      },
+      {
+        "title": "Baş ve boyun bölgesinde gerginlik",
+        "description": "Bazı kişiler gerginlik hissettiklerinde hacamatla ilgilenir. Süren veya şiddetli belirtiler bir sağlık uzmanı tarafından değerlendirilmelidir."
+      },
+      {
+        "title": "Sırt bölgesinde rahatlık",
+        "description": "Bazı kişiler hacamatı sırt rahatlığına odaklanan genel bir iyi oluş rutinine dahil eder."
+      },
+      {
+        "title": "Stres ve yorgunluk",
+        "description": "Sakin bir ortamda geçirilen seans, yoğun günlük tempoya kısa bir ara verme fırsatı sunabilir."
+      },
+      {
+        "title": "Sinüs rahatsızlığı",
+        "description": "Bazı kişiler böyle dönemlerde hacamatla ilgilenir. Devam eden belirtiler bir sağlık uzmanı tarafından değerlendirilmelidir."
+      },
+      {
+        "title": "Kadınların iyi oluşu",
+        "description": "Her seans, kadınların rahatlığı ve mahremiyeti gözetilerek planlanır."
+      },
+      {
+        "title": "Romatizmal rahatsızlıklar",
+        "description": "Hacamat, olağan sağlık bakımının veya bir sağlık uzmanının önerdiği tedavinin yerine geçmemelidir."
+      },
+      {
+        "title": "Siyatik sinir bölgesi",
+        "description": "Devam eden ağrı, uyuşma veya güçsüzlük bir sağlık uzmanı tarafından değerlendirilmelidir."
+      }
+    ],
+    "disclaimer": "Deneyimler kişiden kişiye değişebilir. Belirtiniz veya bir sağlık sorununuz varsa ya da düzenli ilaç kullanıyorsanız randevu almadan önce nitelikli bir sağlık uzmanına danışın."
+  },
+  "process": {
+    "kicker": "SÜREÇ NASIL İŞLER?",
+    "title": "İlk sorudan sakin bir seansa.",
+    "imageAlt": "Sakin ve özel bir odada hazırlanmış kupa terapisi bardakları",
+    "steps": [
+      {
+        "title": "Randevu alın",
+        "description": "Telefon veya WhatsApp üzerinden bize ulaşın; birlikte uygun bir randevu zamanı belirleyelim."
+      },
+      {
+        "title": "Seans öncesi görüşme",
+        "description": "Başlamadan önce sorularınızı, ihtiyaçlarınızı ve önemli bilgileri kısaca konuşuruz."
+      },
+      {
+        "title": "Özel ortamda seans",
+        "description": "Seans sakin, temiz ve yalnızca kadınlara ayrılmış bir alanda gerçekleşir."
+      }
+    ]
+  },
+  "privacy": {
+    "kicker": "MAHREMİYET · HİJYEN · RAHATLIK",
+    "title": "Her ayrıntı rahatınız için.",
+    "description": "İyi bir deneyim seans öncesinde başlar: hazırlanmış bir alan, açık iletişim ve kendinizi rahat hissetmenizi sağlayan ayrıntılara özen.",
+    "items": [
+      "Yalnızca kadınlara özel ortam",
+      "Seans boyunca mahremiyet",
+      "Temiz ve hazırlanmış alan",
+      "Kişiye özel yaklaşım"
+    ],
+    "note": "Randevu almadan önce bize sorularınızı iletebilirsiniz. Süreci açık ve huzurlu hâle getirmek için buradayız.",
+    "action": "Soru sor"
+  },
+  "faq": {
+    "kicker": "SIK SORULAN SORULAR",
+    "title": "Randevu öncesi tüm yanıtlar.",
+    "actionPrompt": "Aradığınız yanıtı bulamadınız mı? Bize doğrudan yazın.",
+    "actionIdle": "Mesaj gönder",
+    "actionLoading": "Hazırlanıyor...",
+    "actionSuccess": "WhatsApp açılıyor",
+    "whatsappMessage": "Merhaba, Hixhame Tina hakkında bir soru sormak istiyorum.",
+    "items": [
+      {
+        "question": "Hizmet yalnızca kadınlara mı özel?",
+        "answer": "Evet. Hixhame Tina yalnızca kadınlara ayrılmış bir alandır."
+      },
+      {
+        "question": "Nasıl randevu alabilirim?",
+        "answer": "Bizi arayabilir veya WhatsApp üzerinden yazabilirsiniz. Birlikte size uygun bir zaman belirleriz."
+      },
+      {
+        "question": "Neredesiniz?",
+        "answer": "Kolovicë, Priştine’deyiz. Randevu ayrıntılarını görüşme sırasında netleştiririz."
+      },
+      {
+        "question": "Bir seans ne kadar sürer?",
+        "answer": "Süre seansa göre değişebilir ve randevu oluşturulurken teyit edilir."
+      },
+      {
+        "question": "Nasıl hazırlanmalıyım?",
+        "answer": "Randevu öncesinde tüm sorularınızı bize yazabilirsiniz. Gerekli yönlendirmeleri açık bir şekilde paylaşırız."
+      },
+      {
+        "question": "Randevu almadan önce soru sorabilir miyim?",
+        "answer": "Elbette. Herhangi bir randevu zorunluluğu olmadan WhatsApp’tan yazabilir veya bizi arayabilirsiniz."
+      }
+    ]
+  },
+  "booking": {
+    "kicker": "KOLAY RANDEVU",
+    "title": "Yalnızca kendiniz için bir an ayırın.",
+    "description": "Sorularınız veya randevu için bize doğrudan telefon ya da WhatsApp üzerinden ulaşın.",
+    "primaryCta": "WhatsApp’tan randevu al"
+  },
+  "footer": {
+    "contactTitle": "İletişim",
+    "navigationTitle": "Menü",
+    "aboutLink": "Hakkımızda",
+    "benefitsLink": "Faydaları",
+    "questionsLink": "Sık sorulan sorular",
+    "disclaimer": "Bu web sitesindeki bilgiler genel bilgilendirme amaçlıdır; profesyonel tıbbi tavsiye, tanı veya tedavinin yerini tutmaz. Deneyimler kişiden kişiye değişebilir.",
+    "copyright": "© 2026 Hixhame Tina. Tüm hakları saklıdır."
+  },
+  "metadata": {
+    "title": "Hixhame Tina | Priştine’de Kadınlara Özel Hacamat",
+    "description": "Hixhame Tina, Kolovicë, Priştine’de kadınlara özel, sakin, temiz, mahrem ve özenle hazırlanmış bir ortamda hacamat hizmeti sunar.",
+    "socialImageAlt": "Hixhame Tina - Priştine’de kadınlara özel hacamat",
+    "businessDescription": "Kolovicë, Priştine’de sakin ve mahrem bir ortamda yalnızca kadınlara özel hacamat ve kupa terapisi.",
+    "slogan": "Priştine’de kadınlara özel hacamat ve kupa terapisi",
+    "audience": "Yalnızca kadınlara özel hizmet",
+    "hijamaService": "Kadınlara özel hacamat",
+    "cuppingService": "Kupa terapisi"
+  },
+  "root": {
+    "title": "Dil seçin",
+    "description": "Sizi Hixhame Tina’nın uygun dildeki sayfasına yönlendiriyoruz.",
+    "open": "Siteyi Türkçe aç"
+  },
+  "notFound": {
+    "title": "Sayfa bulunamadı",
+    "description": "Aradığınız sayfa mevcut değil veya taşınmış.",
+    "action": "Ana sayfaya dön"
+  }
+}

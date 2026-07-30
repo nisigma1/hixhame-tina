@@ -1,0 +1,206 @@
+{
+  "common": {
+    "brandLabel": "Hixhame Tina - Cupping therapy",
+    "skipToContent": "Skip to content",
+    "chooseLanguage": "Choose language",
+    "mainNavigation": "Main navigation",
+    "mobileNavigation": "Mobile navigation",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "themeTitle": "Change theme",
+    "activateDark": "Switch to dark theme",
+    "activateLight": "Switch to light theme",
+    "bookAppointment": "Book an appointment",
+    "womenOnly": "Women only",
+    "location": "Kolovicë, Prishtina",
+    "whatsappMessage": "Hello, I would like to book an appointment at Hixhame Tina."
+  },
+  "navigation": {
+    "home": "Home",
+    "about": "About",
+    "benefits": "Benefits",
+    "process": "Process",
+    "questions": "Questions",
+    "contact": "Contact"
+  },
+  "hero": {
+    "eyebrow": "WOMEN ONLY · KOLOVICË, PRISHTINA",
+    "title": "Hijama for women, with care and privacy.",
+    "description": "A calm, clean and private environment, thoughtfully prepared for every session.",
+    "primaryCta": "Book on WhatsApp",
+    "secondaryCta": "Call now",
+    "trustLine": "Privacy, hygiene and individual care.",
+    "imageAlt": "Cupping therapy cups in a calm, thoughtfully prepared setting"
+  },
+  "trust": {
+    "kicker": "AN EXPERIENCE CREATED WITH CARE",
+    "title": "Privacy and care in every session.",
+    "description": "The service is exclusively for women. Every session is shaped by clear communication, personal attention and respect for your comfort.",
+    "imageAlt": "A calm room prepared with cupping therapy cups",
+    "items": [
+      "Women only",
+      "Private setting",
+      "Hygiene and preparation",
+      "Communication before the session",
+      "Individual care"
+    ]
+  },
+  "about": {
+    "kicker": "ABOUT HIJAMA",
+    "title": "Calm, clear and individual care.",
+    "paragraphOne": "Hijama is a traditional form of cupping that many people include in their personal wellbeing routine.",
+    "paragraphTwo": "At Hixhame Tina, every session is designed exclusively for women, with careful attention to privacy, hygiene and clear communication.",
+    "detail": "Space for your questions before you decide.",
+    "imageAlt": "Cupping therapy cups arranged on soft rose fabric in a calm setting"
+  },
+  "benefits": {
+    "kicker": "WELLBEING & CARE",
+    "title": "Wellbeing topics, discussed with care.",
+    "introduction": "The topics below reflect common reasons people explore hijama; they are not promises of results. Hijama does not replace medical assessment, diagnosis or treatment.",
+    "items": [
+      {
+        "title": "A sense of lightness and wellbeing",
+        "description": "Some people include hijama in their routine as a moment of intentional self-care."
+      },
+      {
+        "title": "General wellbeing",
+        "description": "Some people view it as one part of a mindful personal wellbeing routine."
+      },
+      {
+        "title": "Relaxation and rest",
+        "description": "The calm setting of a session may provide a moment to pause, rest and unwind."
+      },
+      {
+        "title": "Tension around the head and neck",
+        "description": "Some people explore hijama when they feel tense. Persistent or severe symptoms should be discussed with a qualified healthcare professional."
+      },
+      {
+        "title": "Comfort for the back",
+        "description": "Some people include it in a broader wellbeing routine focused on comfort around the back."
+      },
+      {
+        "title": "Stress and tiredness",
+        "description": "A session in a calm setting may offer a moment away from a demanding daily pace."
+      },
+      {
+        "title": "Sinus discomfort",
+        "description": "Some people explore hijama during periods of discomfort. Persistent symptoms should be assessed by a qualified healthcare professional."
+      },
+      {
+        "title": "Women's wellbeing",
+        "description": "Every session is organized with particular attention to women's comfort and privacy."
+      },
+      {
+        "title": "Rheumatic discomfort",
+        "description": "Hijama should not replace usual care or treatment recommended by a qualified healthcare professional."
+      },
+      {
+        "title": "Sciatic nerve area",
+        "description": "Persistent pain, numbness or weakness should be assessed by a qualified healthcare professional."
+      }
+    ],
+    "disclaimer": "Experiences vary from person to person. If you have symptoms, a health condition or take medication, speak with a qualified healthcare professional before booking."
+  },
+  "process": {
+    "kicker": "HOW IT WORKS",
+    "title": "From your first question to a calm session.",
+    "imageAlt": "Cupping therapy cups prepared in a calm, private room",
+    "steps": [
+      {
+        "title": "Book your appointment",
+        "description": "Contact us by phone or WhatsApp. Together, we will find a suitable appointment."
+      },
+      {
+        "title": "Conversation before the session",
+        "description": "Before we begin, we briefly discuss your questions, needs and any information that may be relevant."
+      },
+      {
+        "title": "Your session in a private setting",
+        "description": "The session takes place in a calm, clean space reserved exclusively for women."
+      }
+    ]
+  },
+  "privacy": {
+    "kicker": "PRIVACY · HYGIENE · COMFORT",
+    "title": "Every detail considered for your comfort.",
+    "description": "A good experience begins before the session, with a prepared space, clear communication and attention to what helps you feel at ease.",
+    "items": [
+      "Women-only environment",
+      "Privacy throughout the session",
+      "A clean, prepared space",
+      "Personal attention"
+    ],
+    "note": "You are welcome to ask questions before booking. We are here to make the process clear and reassuring.",
+    "action": "Ask a question"
+  },
+  "faq": {
+    "kicker": "FREQUENTLY ASKED QUESTIONS",
+    "title": "Clarity before you book.",
+    "actionPrompt": "Didn't find the answer you need? Message us directly.",
+    "actionIdle": "Send a message",
+    "actionLoading": "Getting things ready...",
+    "actionSuccess": "Opening WhatsApp",
+    "whatsappMessage": "Hello, I would like to ask a question about Hixhame Tina.",
+    "items": [
+      {
+        "question": "Is the service exclusively for women?",
+        "answer": "Yes. Hixhame Tina is a space dedicated exclusively to women."
+      },
+      {
+        "question": "How can I book an appointment?",
+        "answer": "You can call us or message us on WhatsApp. Together, we will find an appointment that suits you."
+      },
+      {
+        "question": "Where are you located?",
+        "answer": "We are in Kolovicë, Prishtina. We confirm the appointment details during booking."
+      },
+      {
+        "question": "How long can a session take?",
+        "answer": "The duration may vary depending on the session and will be confirmed when you book."
+      },
+      {
+        "question": "How should I prepare?",
+        "answer": "You can message us with any questions before your appointment. We will provide the necessary guidance clearly."
+      },
+      {
+        "question": "Can I ask questions before booking?",
+        "answer": "Always. Message us on WhatsApp or call us, with no pressure to book."
+      }
+    ]
+  },
+  "booking": {
+    "kicker": "SIMPLE BOOKING",
+    "title": "Reserve a moment just for yourself.",
+    "description": "For questions or bookings, contact us directly by phone or WhatsApp.",
+    "primaryCta": "Book on WhatsApp"
+  },
+  "footer": {
+    "contactTitle": "Contact",
+    "navigationTitle": "Navigation",
+    "aboutLink": "About",
+    "benefitsLink": "Benefits",
+    "questionsLink": "Frequently asked questions",
+    "disclaimer": "The information on this website is general and does not replace advice, diagnosis or treatment from a qualified healthcare professional. Individual experiences may vary.",
+    "copyright": "© 2026 Hixhame Tina. All rights reserved."
+  },
+  "metadata": {
+    "title": "Hixhame Tina | Hijama for Women in Prishtina",
+    "description": "Hixhame Tina offers women-only cupping therapy in Kolovicë, Prishtina, in a calm, private and clean environment.",
+    "socialImageAlt": "Hixhame Tina - Hijama for women in Prishtina",
+    "businessDescription": "Hijama and cupping therapy exclusively for women in Kolovicë, Prishtina, in a calm and private setting.",
+    "slogan": "Hijama and cupping therapy for women in Prishtina",
+    "audience": "A service dedicated exclusively to women",
+    "hijamaService": "Hijama for women",
+    "cuppingService": "Cupping therapy"
+  },
+  "root": {
+    "title": "Choose your language",
+    "description": "We are taking you to the Hixhame Tina website in your preferred language.",
+    "open": "Open the website in English"
+  },
+  "notFound": {
+    "title": "Page not found",
+    "description": "The page you requested does not exist or has moved.",
+    "action": "Return home"
+  }
+}

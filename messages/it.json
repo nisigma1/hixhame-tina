@@ -1,0 +1,206 @@
+{
+  "common": {
+    "brandLabel": "Hixhame Tina - Coppettazione",
+    "skipToContent": "Vai al contenuto",
+    "chooseLanguage": "Scegli la lingua",
+    "mainNavigation": "Navigazione principale",
+    "mobileNavigation": "Navigazione mobile",
+    "openMenu": "Apri il menu",
+    "closeMenu": "Chiudi il menu",
+    "themeTitle": "Cambia tema",
+    "activateDark": "Attiva il tema scuro",
+    "activateLight": "Attiva il tema chiaro",
+    "bookAppointment": "Prenota un appuntamento",
+    "womenOnly": "Solo per donne",
+    "location": "Kolovicë, Pristina",
+    "whatsappMessage": "Buongiorno, vorrei prenotare un appuntamento presso Hixhame Tina."
+  },
+  "navigation": {
+    "home": "Home",
+    "about": "Chi siamo",
+    "benefits": "Benefici",
+    "process": "Procedura",
+    "questions": "Domande",
+    "contact": "Contatti"
+  },
+  "hero": {
+    "eyebrow": "SOLO PER DONNE · KOLOVICË, PRISTINA",
+    "title": "Hijama per donne, con cura e riservatezza.",
+    "description": "Un ambiente tranquillo, pulito e riservato, preparato con attenzione per ogni seduta.",
+    "primaryCta": "Prenota su WhatsApp",
+    "secondaryCta": "Chiama ora",
+    "trustLine": "Riservatezza, igiene e attenzione individuale.",
+    "imageAlt": "Coppette terapeutiche in un ambiente tranquillo e preparato con cura"
+  },
+  "trust": {
+    "kicker": "UN'ESPERIENZA CREATA CON CURA",
+    "title": "Riservatezza e attenzione in ogni seduta.",
+    "description": "Il servizio è dedicato esclusivamente alle donne. Ogni seduta si svolge con una comunicazione chiara, attenzione personalizzata e rispetto per il tuo comfort.",
+    "imageAlt": "Un ambiente tranquillo preparato con coppette terapeutiche",
+    "items": [
+      "Solo per donne",
+      "Ambiente riservato",
+      "Igiene e preparazione",
+      "Comunicazione prima della seduta",
+      "Attenzione personalizzata"
+    ]
+  },
+  "about": {
+    "kicker": "LA HIJAMA",
+    "title": "Un approccio sereno e attento.",
+    "paragraphOne": "La hijama è una pratica tradizionale di coppettazione che molte persone includono nella propria routine personale di benessere.",
+    "paragraphTwo": "Presso Hixhame Tina, ogni seduta è pensata esclusivamente per le donne, con particolare attenzione alla riservatezza, all'igiene e a una comunicazione chiara.",
+    "detail": "Uno spazio per le tue domande prima di decidere.",
+    "imageAlt": "Coppette terapeutiche disposte su un tessuto rosa in un ambiente tranquillo"
+  },
+  "benefits": {
+    "kicker": "BENESSERE & CURA",
+    "title": "Temi legati al benessere, spiegati con attenzione.",
+    "introduction": "I temi seguenti descrivono perché alcune persone si interessano alla hijama; non rappresentano promesse di risultato. La hijama non sostituisce una valutazione, una diagnosi o un trattamento medico.",
+    "items": [
+      {
+        "title": "Sensazione di leggerezza e benessere",
+        "description": "Alcune persone includono la hijama nella propria routine come momento di cura di sé."
+      },
+      {
+        "title": "Benessere generale",
+        "description": "Alcune persone la considerano parte di una routine personale e consapevole di benessere."
+      },
+      {
+        "title": "Relax e riposo",
+        "description": "L'ambiente tranquillo della seduta può offrire un momento per rallentare, riposare e rilassarsi."
+      },
+      {
+        "title": "Tensione alla testa e al collo",
+        "description": "Alcune persone si interessano alla hijama quando avvertono tensione. Sintomi persistenti o intensi richiedono il parere di un professionista sanitario."
+      },
+      {
+        "title": "Comfort per la schiena",
+        "description": "Alcune persone la includono in una routine generale di benessere incentrata sul comfort della schiena."
+      },
+      {
+        "title": "Stress e stanchezza",
+        "description": "Una seduta in un ambiente tranquillo può offrire una breve pausa da un ritmo quotidiano impegnativo."
+      },
+      {
+        "title": "Fastidi ai seni paranasali",
+        "description": "Alcune persone si interessano alla hijama in questi periodi. Un fastidio persistente deve essere valutato da un professionista sanitario."
+      },
+      {
+        "title": "Benessere femminile",
+        "description": "Ogni seduta è organizzata con particolare attenzione al comfort e alla riservatezza delle donne."
+      },
+      {
+        "title": "Fastidi reumatici",
+        "description": "La hijama non deve sostituire le cure abituali o un trattamento consigliato da un professionista sanitario."
+      },
+      {
+        "title": "Zona del nervo sciatico",
+        "description": "Dolore, intorpidimento o debolezza persistenti richiedono la valutazione di un professionista sanitario."
+      }
+    ],
+    "disclaimer": "Le esperienze variano da persona a persona. In presenza di sintomi, condizioni di salute o assunzione regolare di farmaci, consulta un professionista sanitario qualificato prima di prenotare."
+  },
+  "process": {
+    "kicker": "COME SI SVOLGE",
+    "title": "Dalla prima domanda a una seduta serena.",
+    "imageAlt": "Coppette terapeutiche preparate in una stanza tranquilla e riservata",
+    "steps": [
+      {
+        "title": "Prenota l'appuntamento",
+        "description": "Contattaci per telefono o su WhatsApp e troveremo insieme un appuntamento adatto."
+      },
+      {
+        "title": "Colloquio prima della seduta",
+        "description": "Prima di iniziare, parliamo brevemente delle tue domande, delle tue esigenze e delle informazioni importanti."
+      },
+      {
+        "title": "Seduta in un ambiente riservato",
+        "description": "La seduta si svolge in uno spazio tranquillo, pulito e riservato esclusivamente alle donne."
+      }
+    ]
+  },
+  "privacy": {
+    "kicker": "RISERVATEZZA · IGIENE · COMFORT",
+    "title": "Ogni dettaglio pensato per il tuo comfort.",
+    "description": "Una buona esperienza inizia prima della seduta, con uno spazio preparato, una comunicazione chiara e attenzione a ciò che ti fa sentire a tuo agio.",
+    "items": [
+      "Ambiente riservato alle donne",
+      "Riservatezza durante la seduta",
+      "Spazio pulito e preparato",
+      "Attenzione personalizzata"
+    ],
+    "note": "Puoi farci domande prima di prenotare. Siamo qui per rendere il percorso chiaro e rassicurante.",
+    "action": "Fai una domanda"
+  },
+  "faq": {
+    "kicker": "DOMANDE FREQUENTI",
+    "title": "Chiarezza prima di prenotare.",
+    "actionPrompt": "Non hai trovato la risposta? Scrivici direttamente.",
+    "actionIdle": "Invia un messaggio",
+    "actionLoading": "Preparazione in corso...",
+    "actionSuccess": "Apertura di WhatsApp",
+    "whatsappMessage": "Buongiorno, vorrei fare una domanda su Hixhame Tina.",
+    "items": [
+      {
+        "question": "Il servizio è riservato esclusivamente alle donne?",
+        "answer": "Sì. Hixhame Tina è uno spazio dedicato esclusivamente alle donne."
+      },
+      {
+        "question": "Come posso prenotare un appuntamento?",
+        "answer": "Puoi chiamarci o scriverci su WhatsApp. Troveremo insieme un orario adatto."
+      },
+      {
+        "question": "Dove vi trovate?",
+        "answer": "Siamo a Kolovicë, Pristina. I dettagli dell'appuntamento vengono confermati durante la prenotazione."
+      },
+      {
+        "question": "Quanto può durare una seduta?",
+        "answer": "La durata può variare in base alla seduta e viene confermata al momento della prenotazione."
+      },
+      {
+        "question": "Come devo prepararmi?",
+        "answer": "Puoi scriverci qualsiasi domanda prima dell'appuntamento. Ti forniremo con chiarezza tutte le indicazioni necessarie."
+      },
+      {
+        "question": "Posso fare domande prima di prenotare?",
+        "answer": "Certamente. Scrivici su WhatsApp o chiamaci, senza alcun obbligo di prenotazione."
+      }
+    ]
+  },
+  "booking": {
+    "kicker": "PRENOTAZIONE SEMPLICE",
+    "title": "Riserva un momento solo per te.",
+    "description": "Per domande o prenotazioni, contattaci direttamente per telefono o su WhatsApp.",
+    "primaryCta": "Prenota su WhatsApp"
+  },
+  "footer": {
+    "contactTitle": "Contatti",
+    "navigationTitle": "Navigazione",
+    "aboutLink": "Chi siamo",
+    "benefitsLink": "Benefici",
+    "questionsLink": "Domande frequenti",
+    "disclaimer": "Le informazioni presenti su questo sito sono di carattere generale e non sostituiscono il parere, la diagnosi o il trattamento di un professionista sanitario qualificato. Le esperienze possono variare da persona a persona.",
+    "copyright": "© 2026 Hixhame Tina. Tutti i diritti riservati."
+  },
+  "metadata": {
+    "title": "Hixhame Tina | Hijama per donne a Pristina",
+    "description": "Hixhame Tina offre coppettazione esclusivamente per donne a Kolovicë, Pristina, in un ambiente tranquillo, pulito e riservato.",
+    "socialImageAlt": "Hixhame Tina - Hijama per donne a Pristina",
+    "businessDescription": "Hijama e coppettazione esclusivamente per donne a Kolovicë, Pristina, in un ambiente tranquillo e riservato.",
+    "slogan": "Hijama e coppettazione per donne a Pristina",
+    "audience": "Un servizio riservato esclusivamente alle donne",
+    "hijamaService": "Hijama per donne",
+    "cuppingService": "Coppettazione"
+  },
+  "root": {
+    "title": "Scegli la lingua",
+    "description": "Ti stiamo indirizzando alla versione corretta del sito Hixhame Tina.",
+    "open": "Apri il sito in italiano"
+  },
+  "notFound": {
+    "title": "Pagina non trovata",
+    "description": "La pagina richiesta non esiste o è stata spostata.",
+    "action": "Torna alla home"
+  }
+}

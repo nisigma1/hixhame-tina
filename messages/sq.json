@@ -1,0 +1,206 @@
+{
+  "common": {
+    "brandLabel": "Hixhame Tina - Terapia me kupa",
+    "skipToContent": "Kalo te përmbajtja",
+    "chooseLanguage": "Zgjidh gjuhën",
+    "mainNavigation": "Navigimi kryesor",
+    "mobileNavigation": "Navigimi mobil",
+    "openMenu": "Hap menynë",
+    "closeMenu": "Mbyll menynë",
+    "themeTitle": "Ndrysho temën",
+    "activateDark": "Aktivizo temën e errët",
+    "activateLight": "Aktivizo temën e çelët",
+    "bookAppointment": "Rezervo terminin",
+    "womenOnly": "Vetëm për femra",
+    "location": "Kolovicë, Prishtinë",
+    "whatsappMessage": "Përshëndetje, dëshiroj të rezervoj një termin te Hixhame Tina."
+  },
+  "navigation": {
+    "home": "Ballina",
+    "about": "Rreth nesh",
+    "benefits": "Përfitimet",
+    "process": "Procesi",
+    "questions": "Pyetje",
+    "contact": "Kontakt"
+  },
+  "hero": {
+    "eyebrow": "VETËM PËR FEMRA · KOLOVICË, PRISHTINË",
+    "title": "Hixhame për femra, me kujdes dhe privatësi.",
+    "description": "Një ambient i qetë, i pastër dhe privat, i përgatitur me kujdes për çdo seancë.",
+    "primaryCta": "Rezervo në WhatsApp",
+    "secondaryCta": "Telefono tani",
+    "trustLine": "Privatësi, higjienë dhe kujdes individual.",
+    "imageAlt": "Kupa terapie në një ambient të qetë dhe të përgatitur me kujdes"
+  },
+  "trust": {
+    "kicker": "PËRVOJË E KRIJUAR ME KUJDES",
+    "title": "Privatësi dhe kujdes në çdo seancë.",
+    "description": "Shërbimi është vetëm për femra. Çdo seancë zhvillohet me komunikim të qartë, kujdes individual dhe respekt për rehatinë tënde.",
+    "imageAlt": "Ambient i qetë dhe i përgatitur me kupa terapie",
+    "items": [
+      "Vetëm për femra",
+      "Ambient privat",
+      "Higjienë dhe përgatitje",
+      "Komunikim para seancës",
+      "Kujdes individual"
+    ]
+  },
+  "about": {
+    "kicker": "RRETH HIXHAMES",
+    "title": "Kujdes i qetë, i qartë dhe individual.",
+    "paragraphOne": "Hixhamja është një formë tradicionale e terapisë me kupa, të cilën shumë persona e përfshijnë në rutinën e tyre të mirëqenies.",
+    "paragraphTwo": "Në Hixhame Tina, çdo seancë është menduar vetëm për femra, me vëmendje ndaj privatësisë, higjienës dhe komunikimit të qartë.",
+    "detail": "Hapësirë për pyetjet e tua para se të vendosësh.",
+    "imageAlt": "Kupa terapie të vendosura mbi tekstil rozë në një ambient të qetë"
+  },
+  "benefits": {
+    "kicker": "MIRËQENIE & KUJDES",
+    "title": "Tema të mirëqenies, të shpjeguara me kujdes.",
+    "introduction": "Temat më poshtë tregojnë pse disa persona interesohen për hixhamen; ato nuk janë premtime për rezultate. Hixhamja nuk zëvendëson vlerësimin, diagnozën ose trajtimin mjekësor.",
+    "items": [
+      {
+        "title": "Ndjesi lehtësie dhe mirëqenieje",
+        "description": "Disa persona e përfshijnë hixhamen në rutinën e tyre si një moment kujdesi për veten."
+      },
+      {
+        "title": "Mirëqenie e përgjithshme",
+        "description": "Disa persona e shohin si pjesë të një rutine të vetëdijshme të kujdesit për veten."
+      },
+      {
+        "title": "Relaksim dhe çlodhje",
+        "description": "Ambienti i qetë i seancës mund të krijojë një moment për pushim dhe çlodhje."
+      },
+      {
+        "title": "Tension në kokë dhe qafë",
+        "description": "Disa persona interesohen për hixhame kur ndiejnë tension. Shqetësimet e vazhdueshme ose të forta duhen vlerësuar nga një profesionist shëndetësor."
+      },
+      {
+        "title": "Rehati për shpinën",
+        "description": "Disa persona e përfshijnë hixhamen në rutinën e mirëqenies kur kërkojnë më shumë rehati për shpinën."
+      },
+      {
+        "title": "Stres dhe lodhje",
+        "description": "Një seancë në ambient të qetë mund të krijojë hapësirë për t’u shkëputur për pak nga ritmi i ngarkuar."
+      },
+      {
+        "title": "Shqetësime të sinuseve",
+        "description": "Disa persona interesohen për hixhame gjatë periudhave të shqetësimit. Simptomat e vazhdueshme duhen vlerësuar nga një profesionist shëndetësor."
+      },
+      {
+        "title": "Mirëqenia e femrave",
+        "description": "Çdo seancë organizohet me vëmendje të veçantë ndaj rehatisë dhe privatësisë së femrave."
+      },
+      {
+        "title": "Shqetësime reumatike",
+        "description": "Hixhamja nuk duhet të zëvendësojë kujdesin e zakonshëm ose trajtimin e përshkruar nga një profesionist shëndetësor."
+      },
+      {
+        "title": "Zona e nervit shiatik",
+        "description": "Për dhimbje, mpirje ose dobësi të vazhdueshme, kërko vlerësim nga një profesionist shëndetësor."
+      }
+    ],
+    "disclaimer": "Përvojat ndryshojnë nga personi në person. Nëse ke simptoma, një gjendje shëndetësore ose merr barna, këshillohu me një profesionist shëndetësor para rezervimit."
+  },
+  "process": {
+    "kicker": "SI REALIZOHET",
+    "title": "Nga pyetja e parë te një seancë e qetë.",
+    "imageAlt": "Kupa terapie të përgatitura në një dhomë private dhe të qetë",
+    "steps": [
+      {
+        "title": "Rezervo terminin",
+        "description": "Na kontakto përmes telefonit ose WhatsApp-it dhe zgjedhim një termin të përshtatshëm."
+      },
+      {
+        "title": "Bisedë para seancës",
+        "description": "Para fillimit flasim shkurt për pyetjet e tua, nevojat dhe çdo informacion të rëndësishëm."
+      },
+      {
+        "title": "Seanca në ambient privat",
+        "description": "Seanca zhvillohet në një hapësirë të qetë, të pastër dhe vetëm për femra."
+      }
+    ]
+  },
+  "privacy": {
+    "kicker": "PRIVATËSI · HIGJIENË · REHATI",
+    "title": "Çdo detaj për rehatinë tënde.",
+    "description": "Një përvojë e mirë fillon përpara seancës: me hapësirë të përgatitur, komunikim të qartë dhe vëmendje ndaj asaj që të bën të ndihesh rehat.",
+    "items": [
+      "Ambient vetëm për femra",
+      "Privatësi gjatë seancës",
+      "Hapësirë e pastër dhe e përgatitur",
+      "Kujdes i personalizuar"
+    ],
+    "note": "Mund të na bësh pyetje para rezervimit. Jemi këtu që ta bëjmë procesin të qartë dhe të qetë.",
+    "action": "Bëj një pyetje"
+  },
+  "faq": {
+    "kicker": "PYETJE TË SHPESHTA",
+    "title": "Qartësi para se të rezervosh.",
+    "actionPrompt": "Nuk e gjete përgjigjen? Na shkruaj drejtpërdrejt.",
+    "actionIdle": "Dërgo mesazh",
+    "actionLoading": "Duke u përgatitur...",
+    "actionSuccess": "Po hapet WhatsApp",
+    "whatsappMessage": "Përshëndetje, dëshiroj të bëj një pyetje për Hixhame Tina.",
+    "items": [
+      {
+        "question": "A është shërbimi vetëm për femra?",
+        "answer": "Po. Hixhame Tina është një hapësirë e dedikuar vetëm për femra."
+      },
+      {
+        "question": "Si mund ta rezervoj terminin?",
+        "answer": "Mund të na telefonosh ose të na shkruash në WhatsApp. Së bashku gjejmë një termin të përshtatshëm."
+      },
+      {
+        "question": "Ku ndodheni?",
+        "answer": "Jemi në Kolovicë, Prishtinë. Detajet e takimit i konfirmojmë gjatë rezervimit."
+      },
+      {
+        "question": "Sa mund të zgjasë një seancë?",
+        "answer": "Kohëzgjatja mund të ndryshojë sipas seancës dhe konfirmohet gjatë rezervimit."
+      },
+      {
+        "question": "Si duhet të përgatitem?",
+        "answer": "Para terminit mund të na shkruash për çdo pyetje. T’i japim qartë udhëzimet e nevojshme."
+      },
+      {
+        "question": "A mund të bëj pyetje para rezervimit?",
+        "answer": "Po, patjetër. Na shkruaj në WhatsApp ose na telefono, pa asnjë detyrim për rezervim."
+      }
+    ]
+  },
+  "booking": {
+    "kicker": "REZERVIM I THJESHTË",
+    "title": "Rezervo një moment vetëm për veten.",
+    "description": "Për pyetje ose rezervim, na kontakto drejtpërdrejt përmes telefonit ose WhatsApp-it.",
+    "primaryCta": "Rezervo në WhatsApp"
+  },
+  "footer": {
+    "contactTitle": "Kontakti",
+    "navigationTitle": "Navigim",
+    "aboutLink": "Rreth nesh",
+    "benefitsLink": "Përfitimet",
+    "questionsLink": "Pyetje të shpeshta",
+    "disclaimer": "Informacioni në këtë faqe është i përgjithshëm dhe nuk zëvendëson këshillën, diagnostikimin ose trajtimin nga një profesionist shëndetësor. Përvojat mund të ndryshojnë nga personi në person.",
+    "copyright": "© 2026 Hixhame Tina. Të gjitha të drejtat e rezervuara."
+  },
+  "metadata": {
+    "title": "Hixhame Tina | Hixhame për femra në Prishtinë",
+    "description": "Hixhame Tina ofron terapi me kupa vetëm për femra në Kolovicë, Prishtinë, në një ambient të qetë, privat dhe të pastër.",
+    "socialImageAlt": "Hixhame Tina - Hixhame për femra në Prishtinë",
+    "businessDescription": "Hixhame dhe terapi me kupa vetëm për femra në Kolovicë, Prishtinë, në ambient privat dhe të qetë.",
+    "slogan": "Hixhame dhe terapi me kupa vetëm për femra në Prishtinë",
+    "audience": "Shërbim i dedikuar vetëm për femra",
+    "hijamaService": "Hixhame për femra",
+    "cuppingService": "Terapi me kupa"
+  },
+  "root": {
+    "title": "Zgjidh gjuhën",
+    "description": "Po të dërgojmë te versioni i përshtatshëm i faqes Hixhame Tina.",
+    "open": "Hape faqen në shqip"
+  },
+  "notFound": {
+    "title": "Faqja nuk u gjet",
+    "description": "Faqja që kërkove nuk ekziston ose është zhvendosur.",
+    "action": "Kthehu në ballinë"
+  }
+}

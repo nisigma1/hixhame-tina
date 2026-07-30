@@ -1,0 +1,206 @@
+{
+  "common": {
+    "brandLabel": "Hixhame Tina - Schröpftherapie",
+    "skipToContent": "Zum Inhalt springen",
+    "chooseLanguage": "Sprache auswählen",
+    "mainNavigation": "Hauptnavigation",
+    "mobileNavigation": "Mobile Navigation",
+    "openMenu": "Menü öffnen",
+    "closeMenu": "Menü schließen",
+    "themeTitle": "Darstellung ändern",
+    "activateDark": "Dunkles Design aktivieren",
+    "activateLight": "Helles Design aktivieren",
+    "bookAppointment": "Termin buchen",
+    "womenOnly": "Nur für Frauen",
+    "location": "Kolovicë, Prishtina",
+    "whatsappMessage": "Hallo, ich möchte einen Termin bei Hixhame Tina buchen."
+  },
+  "navigation": {
+    "home": "Startseite",
+    "about": "Über uns",
+    "benefits": "Vorteile",
+    "process": "Ablauf",
+    "questions": "Fragen",
+    "contact": "Kontakt"
+  },
+  "hero": {
+    "eyebrow": "NUR FÜR FRAUEN · KOLOVICË, PRISHTINA",
+    "title": "Hijama für Frauen, mit Sorgfalt und Privatsphäre.",
+    "description": "Eine ruhige, saubere und private Umgebung, die sorgfältig für jede Sitzung vorbereitet wird.",
+    "primaryCta": "Über WhatsApp buchen",
+    "secondaryCta": "Jetzt anrufen",
+    "trustLine": "Privatsphäre, Hygiene und persönliche Betreuung.",
+    "imageAlt": "Schröpfgläser in einer ruhigen und sorgfältig vorbereiteten Umgebung"
+  },
+  "trust": {
+    "kicker": "MIT SORGFALT GESTALTETE ERFAHRUNG",
+    "title": "Privatsphäre und Betreuung bei jeder Sitzung.",
+    "description": "Das Angebot richtet sich ausschließlich an Frauen. Jede Sitzung ist geprägt von klarer Kommunikation, persönlicher Aufmerksamkeit und Respekt für Ihr Wohlbefinden.",
+    "imageAlt": "Ein ruhiger, für die Schröpftherapie vorbereiteter Raum",
+    "items": [
+      "Nur für Frauen",
+      "Private Umgebung",
+      "Hygiene und Vorbereitung",
+      "Gespräch vor der Sitzung",
+      "Persönliche Betreuung"
+    ]
+  },
+  "about": {
+    "kicker": "ÜBER HIJAMA",
+    "title": "Ruhige, persönliche Begleitung.",
+    "paragraphOne": "Hijama ist eine traditionelle Form des Schröpfens, die viele Menschen in ihre persönliche Wohlfühlroutine integrieren.",
+    "paragraphTwo": "Bei Hixhame Tina ist jede Sitzung ausschließlich auf Frauen ausgerichtet, mit besonderem Augenmerk auf Privatsphäre, Hygiene und klare Kommunikation.",
+    "detail": "Raum für Ihre Fragen, bevor Sie sich entscheiden.",
+    "imageAlt": "Schröpfgläser auf rosafarbenem Stoff in einer ruhigen Umgebung"
+  },
+  "benefits": {
+    "kicker": "WOHLBEFINDEN & FÜRSORGE",
+    "title": "Wohlbefinden, mit Sorgfalt eingeordnet.",
+    "introduction": "Die folgenden Themen zeigen, warum sich manche Menschen für Hijama interessieren; sie sind kein Versprechen auf bestimmte Ergebnisse. Hijama ersetzt keine medizinische Untersuchung, Diagnose oder Behandlung.",
+    "items": [
+      {
+        "title": "Gefühl von Leichtigkeit und Wohlbefinden",
+        "description": "Manche Menschen integrieren Hijama als Moment bewusster Selbstfürsorge in ihre Routine."
+      },
+      {
+        "title": "Allgemeines Wohlbefinden",
+        "description": "Manche Menschen sehen darin einen Teil ihrer achtsamen persönlichen Wohlfühlroutine."
+      },
+      {
+        "title": "Entspannung und Erholung",
+        "description": "Die ruhige Atmosphäre einer Sitzung kann einen Moment zum Innehalten und Entspannen bieten."
+      },
+      {
+        "title": "Spannungsgefühl im Kopf- und Nackenbereich",
+        "description": "Manche Menschen interessieren sich bei Spannungsgefühlen für Hijama. Anhaltende oder starke Beschwerden sollten ärztlich abgeklärt werden."
+      },
+      {
+        "title": "Wohlbefinden im Rückenbereich",
+        "description": "Manche Menschen beziehen Hijama in eine allgemeine Wohlfühlroutine ein, bei der der Rücken im Mittelpunkt steht."
+      },
+      {
+        "title": "Stress und Müdigkeit",
+        "description": "Eine Sitzung in ruhiger Atmosphäre kann eine kurze Auszeit vom fordernden Alltag bieten."
+      },
+      {
+        "title": "Beschwerden im Nebenhöhlenbereich",
+        "description": "Manche Menschen interessieren sich in solchen Phasen für Hijama. Anhaltende Beschwerden sollten medizinisch abgeklärt werden."
+      },
+      {
+        "title": "Wohlbefinden von Frauen",
+        "description": "Jede Sitzung wird mit besonderer Rücksicht auf den Komfort und die Privatsphäre von Frauen gestaltet."
+      },
+      {
+        "title": "Rheumatische Beschwerden",
+        "description": "Hijama sollte weder die übliche Versorgung noch eine medizinisch empfohlene Behandlung ersetzen."
+      },
+      {
+        "title": "Bereich des Ischiasnervs",
+        "description": "Anhaltende Schmerzen, Taubheitsgefühle oder Schwäche sollten medizinisch abgeklärt werden."
+      }
+    ],
+    "disclaimer": "Erfahrungen können von Person zu Person variieren. Bei Beschwerden, Vorerkrankungen oder regelmäßiger Medikamenteneinnahme sollten Sie sich vor der Buchung an qualifiziertes medizinisches Fachpersonal wenden."
+  },
+  "process": {
+    "kicker": "SO LÄUFT ES AB",
+    "title": "Von der ersten Frage bis zu einer ruhigen Sitzung.",
+    "imageAlt": "Vorbereitete Schröpfgläser in einem ruhigen, privaten Raum",
+    "steps": [
+      {
+        "title": "Termin vereinbaren",
+        "description": "Kontaktieren Sie uns telefonisch oder über WhatsApp, und wir finden gemeinsam einen passenden Termin."
+      },
+      {
+        "title": "Gespräch vor der Sitzung",
+        "description": "Vor Beginn besprechen wir kurz Ihre Fragen, Bedürfnisse und alle wichtigen Informationen."
+      },
+      {
+        "title": "Sitzung in privater Umgebung",
+        "description": "Die Sitzung findet in einem ruhigen, sauberen Raum ausschließlich für Frauen statt."
+      }
+    ]
+  },
+  "privacy": {
+    "kicker": "PRIVATSPHÄRE · HYGIENE · KOMFORT",
+    "title": "Jedes Detail für Ihr Wohlbefinden.",
+    "description": "Eine gute Erfahrung beginnt bereits vor der Sitzung: mit einem vorbereiteten Raum, klarer Kommunikation und Aufmerksamkeit für das, was Ihnen ein gutes Gefühl gibt.",
+    "items": [
+      "Umgebung nur für Frauen",
+      "Privatsphäre während der Sitzung",
+      "Sauber vorbereiteter Raum",
+      "Individuelle Betreuung"
+    ],
+    "note": "Sie können uns vor der Buchung jederzeit Fragen stellen. Wir möchten den Ablauf klar und angenehm gestalten.",
+    "action": "Frage stellen"
+  },
+  "faq": {
+    "kicker": "HÄUFIG GESTELLTE FRAGEN",
+    "title": "Klarheit vor der Buchung.",
+    "actionPrompt": "Keine passende Antwort gefunden? Schreiben Sie uns direkt.",
+    "actionIdle": "Nachricht senden",
+    "actionLoading": "Wird vorbereitet...",
+    "actionSuccess": "WhatsApp wird geöffnet",
+    "whatsappMessage": "Hallo, ich habe eine Frage zu Hixhame Tina.",
+    "items": [
+      {
+        "question": "Ist das Angebot ausschließlich für Frauen?",
+        "answer": "Ja. Hixhame Tina ist ein Raum, der ausschließlich Frauen vorbehalten ist."
+      },
+      {
+        "question": "Wie kann ich einen Termin buchen?",
+        "answer": "Sie können uns anrufen oder über WhatsApp schreiben. Gemeinsam finden wir einen passenden Termin."
+      },
+      {
+        "question": "Wo befinden Sie sich?",
+        "answer": "Wir befinden uns in Kolovicë, Prishtina. Die genauen Termindetails bestätigen wir bei der Buchung."
+      },
+      {
+        "question": "Wie lange dauert eine Sitzung?",
+        "answer": "Die Dauer kann je nach Sitzung variieren und wird bei der Buchung bestätigt."
+      },
+      {
+        "question": "Wie sollte ich mich vorbereiten?",
+        "answer": "Vor dem Termin können Sie uns jederzeit Fragen schicken. Wir erklären Ihnen die nötigen Hinweise klar und verständlich."
+      },
+      {
+        "question": "Kann ich vor der Buchung Fragen stellen?",
+        "answer": "Jederzeit. Schreiben Sie uns über WhatsApp oder rufen Sie uns an, ganz unverbindlich."
+      }
+    ]
+  },
+  "booking": {
+    "kicker": "EINFACHE BUCHUNG",
+    "title": "Reservieren Sie einen Moment nur für sich.",
+    "description": "Für Fragen oder Buchungen erreichen Sie uns direkt telefonisch oder über WhatsApp.",
+    "primaryCta": "Über WhatsApp buchen"
+  },
+  "footer": {
+    "contactTitle": "Kontakt",
+    "navigationTitle": "Navigation",
+    "aboutLink": "Über uns",
+    "benefitsLink": "Vorteile",
+    "questionsLink": "Häufig gestellte Fragen",
+    "disclaimer": "Die Informationen auf dieser Website sind allgemeiner Natur und ersetzen keine Beratung, Diagnose oder Behandlung durch qualifiziertes medizinisches Fachpersonal. Individuelle Erfahrungen können variieren.",
+    "copyright": "© 2026 Hixhame Tina. Alle Rechte vorbehalten."
+  },
+  "metadata": {
+    "title": "Hixhame Tina | Hijama für Frauen in Prishtina",
+    "description": "Hixhame Tina bietet Schröpftherapie ausschließlich für Frauen in Kolovicë, Prishtina, in einer ruhigen, privaten und sauberen Umgebung.",
+    "socialImageAlt": "Hixhame Tina - Hijama für Frauen in Prishtina",
+    "businessDescription": "Hijama und Schröpftherapie ausschließlich für Frauen in Kolovicë, Prishtina, in einer ruhigen und privaten Umgebung.",
+    "slogan": "Hijama und Schröpftherapie für Frauen in Prishtina",
+    "audience": "Ein Angebot ausschließlich für Frauen",
+    "hijamaService": "Hijama für Frauen",
+    "cuppingService": "Schröpftherapie"
+  },
+  "root": {
+    "title": "Sprache auswählen",
+    "description": "Wir leiten Sie zur passenden Sprachversion von Hixhame Tina weiter.",
+    "open": "Website auf Deutsch öffnen"
+  },
+  "notFound": {
+    "title": "Seite nicht gefunden",
+    "description": "Die angeforderte Seite existiert nicht oder wurde verschoben.",
+    "action": "Zur Startseite"
+  }
+}
