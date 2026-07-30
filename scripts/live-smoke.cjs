@@ -15,7 +15,7 @@ const whatsapp =
   });
   page.on("pageerror", (error) => errors.push(error.message));
 
-  await page.goto("https://hixhametina.com/", { waitUntil: "networkidle" });
+  await page.goto("https://hixhametina.com/sq/", { waitUntil: "networkidle" });
   const base = await page.evaluate((expectedWhatsApp) => ({
     overflow: document.documentElement.scrollWidth > document.documentElement.clientWidth,
     whatsappOk: document.querySelector('.hero-actions a[href^="https://wa.me"]')?.getAttribute("href") === expectedWhatsApp,
@@ -40,7 +40,9 @@ const whatsapp =
       document.querySelector("#mobile-menu")?.hasAttribute("hidden"),
   );
 
-  await page.goto("https://hixhametina.com/#pyetje", { waitUntil: "networkidle" });
+  await page.goto("https://hixhametina.com/sq/#pyetje", {
+    waitUntil: "networkidle",
+  });
   await page.click(".faq-item button");
   await page.waitForTimeout(80);
   const faqOk = await page.evaluate(
