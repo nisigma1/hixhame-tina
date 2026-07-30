@@ -117,7 +117,7 @@ export default async function LocaleLayout({
           as="image"
           href={BUSINESS.heroImage}
           imageSrcSet={`${BUSINESS.heroImageMobile} 800w, ${BUSINESS.heroImage} 1280w`}
-          imageSizes="(max-width: 820px) 100vw, 56vw"
+          imageSizes="(max-width: 980px) 100vw, 52vw"
           fetchPriority="high"
         />
       </head>

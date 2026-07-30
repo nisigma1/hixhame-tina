@@ -9,6 +9,7 @@ const manrope = Manrope({
 
 const newsreader = Newsreader({
   variable: "--font-display",
+  weight: "500",
   subsets: ["latin", "latin-ext"],
   display: "swap",
   preload: true,

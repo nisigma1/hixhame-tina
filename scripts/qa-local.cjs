@@ -17,6 +17,8 @@ const viewportMatrix = [
   { width: 1024, height: 768 },
   { width: 1280, height: 900 },
   { width: 1440, height: 1000 },
+  { width: 1628, height: 814 },
+  { width: 1809, height: 805 },
   { width: 1920, height: 1080 },
 ];
 const selectedLocales = process.env.QA_LOCALES
@@ -156,7 +158,35 @@ async function localeAudit(context, locale, viewport, screenshot = false) {
       }));
       const images = [...document.images];
       const heroImage = document.querySelector(".hero-image");
+      const heroPanelElement = document.querySelector(".hero-panel");
+      const heroHeadingElement = document.querySelector(".hero h1");
+      const heroImageWrapElement = document.querySelector(".hero-image-wrap");
+      const heroPanel = heroPanelElement?.getBoundingClientRect();
+      const heroHeading = heroHeadingElement?.getBoundingClientRect();
+      const heroImageWrap = heroImageWrapElement?.getBoundingClientRect();
+      const headingRange = document.createRange();
+      if (heroHeadingElement) headingRange.selectNodeContents(heroHeadingElement);
+      const heroLineRects = heroHeadingElement
+        ? [...headingRange.getClientRects()].map((box) => ({
+            left: box.left,
+            right: box.right,
+            top: box.top,
+            bottom: box.bottom,
+          }))
+        : [];
+      const heroIsStacked = Boolean(
+        heroPanel &&
+          heroImageWrap &&
+          heroImageWrap.top >= heroPanel.bottom - 1,
+      );
       const header = document.querySelector(".site-header")?.getBoundingClientRect();
+      const brandBox = document.querySelector(".brand")?.getBoundingClientRect();
+      const desktopNavBox = visible(document.querySelector(".desktop-nav"))
+        ? document.querySelector(".desktop-nav")?.getBoundingClientRect()
+        : null;
+      const headerActionsBox = document
+        .querySelector(".header-actions")
+        ?.getBoundingClientRect();
       const visibleControls = [
         ...document.querySelectorAll(
           "button, a.button, .mobile-booking a, [data-language-trigger]",
@@ -251,6 +281,29 @@ async function localeAudit(context, locale, viewport, screenshot = false) {
             item.scrollWidth > item.clientWidth + 1,
         )
         .slice(0, 12);
+      const interactiveElements = [
+        ...document.querySelectorAll("a[href], button"),
+      ].filter(visible);
+      const undersizedTargets = interactiveElements
+        .map((element) => {
+          const box = element.getBoundingClientRect();
+          return {
+            element: `${element.tagName.toLowerCase()}.${
+              typeof element.className === "string"
+                ? element.className.trim().replace(/\s+/g, ".")
+                : ""
+            }`,
+            text: element.textContent?.trim().slice(0, 48) || "",
+            href: element.getAttribute("href") || "",
+            width: Math.round(box.width),
+            height: Math.round(box.height),
+          };
+        })
+        .filter(({ width, height }) => width < 44 || height < 44)
+        .slice(0, 12);
+      const invalidHashLinks = [...document.querySelectorAll('a[href*="#"]')]
+        .map((link) => new URL(link.href, location.href).hash)
+        .filter((hash) => !hash || !document.querySelector(hash));
 
       return {
         htmlLang: document.documentElement.lang,
@@ -285,6 +338,44 @@ async function localeAudit(context, locale, viewport, screenshot = false) {
         ),
         headingVisible: visible(document.querySelector(".hero h1")),
         headingText: document.querySelector(".hero h1")?.textContent?.trim(),
+        heroLineCount: heroLineRects.length,
+        heroHeadingInsidePanel: Boolean(
+          heroPanel &&
+            heroHeading &&
+            heroHeading.left >= heroPanel.left - 1 &&
+            heroHeading.right <= heroPanel.right + 1 &&
+            heroHeading.top >= heroPanel.top - 1 &&
+            heroHeading.bottom <= heroPanel.bottom + 1,
+        ),
+        heroLinesInsidePanel: Boolean(
+          heroPanel &&
+            heroLineRects.length &&
+            heroLineRects.every(
+              (box) =>
+                box.left >= heroPanel.left - 1 &&
+                box.right <= heroPanel.right + 1 &&
+                box.top >= heroPanel.top - 1 &&
+                box.bottom <= heroPanel.bottom + 1,
+            ),
+        ),
+        heroHeadingClipped: Boolean(
+          heroHeadingElement &&
+            (heroHeadingElement.scrollWidth >
+              heroHeadingElement.clientWidth + 1 ||
+              heroHeadingElement.scrollHeight >
+                heroHeadingElement.clientHeight + 1),
+        ),
+        heroHeadingIntersectsImage: Boolean(
+          !heroIsStacked &&
+            heroImageWrap &&
+            heroLineRects.some((box) => box.right > heroImageWrap.left - 1),
+        ),
+        heroPanelOverflows: Boolean(
+          heroPanelElement &&
+            (heroPanelElement.scrollWidth > heroPanelElement.clientWidth + 1 ||
+              heroPanelElement.scrollHeight >
+                heroPanelElement.clientHeight + 1),
+        ),
         heroImageVisible: visible(heroImage),
         heroImageLoaded: Boolean(
           heroImage?.complete && heroImage?.naturalWidth > 0 && heroImage?.naturalHeight > 0,
@@ -314,6 +405,19 @@ async function localeAudit(context, locale, viewport, screenshot = false) {
           const box = control.getBoundingClientRect();
           return box.left >= -1 && box.right <= window.innerWidth + 1;
         }),
+        undersizedTargets,
+        invalidHashLinks,
+        nestedInteractiveCount: document.querySelectorAll(
+          "a button, button a, a a, button button",
+        ).length,
+        headerCollision: Boolean(
+          brandBox &&
+            headerActionsBox &&
+            (desktopNavBox
+              ? brandBox.right + 8 > desktopNavBox.left ||
+                desktopNavBox.right + 8 > headerActionsBox.left
+              : brandBox.right + 8 > headerActionsBox.left),
+        ),
         menuToggleVisible: visible(document.querySelector("[data-menu-toggle]")),
         desktopNavVisible: visible(document.querySelector(".desktop-nav")),
         headerHeight: Math.round(header?.height || 0),
@@ -376,6 +480,30 @@ async function localeAudit(context, locale, viewport, screenshot = false) {
   );
   check(audit.logoVisible, `${locale} ${viewport.width}: logo is clipped or hidden`);
   check(audit.headingVisible, `${locale} ${viewport.width}: hero heading is hidden`);
+  check(
+    audit.heroHeadingInsidePanel,
+    `${locale} ${viewport.width}: hero heading exceeds its copy panel`,
+  );
+  check(
+    audit.heroLinesInsidePanel,
+    `${locale} ${viewport.width}: a hero title line exceeds its copy panel`,
+  );
+  check(
+    !audit.heroHeadingClipped,
+    `${locale} ${viewport.width}: hero heading content is clipped`,
+  );
+  check(
+    !audit.heroHeadingIntersectsImage,
+    `${locale} ${viewport.width}: hero title intersects the image`,
+  );
+  check(
+    !audit.heroPanelOverflows,
+    `${locale} ${viewport.width}: hero copy panel has internal overflow`,
+  );
+  check(
+    audit.heroLineCount > 0 && audit.heroLineCount <= 7,
+    `${locale} ${viewport.width}: hero title has ${audit.heroLineCount} lines`,
+  );
   check(audit.heroImageVisible, `${locale} ${viewport.width}: hero image is hidden`);
   check(audit.heroImageLoaded, `${locale} ${viewport.width}: hero image did not load`);
   if (checkAllImages) {
@@ -414,6 +542,26 @@ async function localeAudit(context, locale, viewport, screenshot = false) {
   check(
     audit.controlsFitViewport,
     `${locale} ${viewport.width}: a visible control exceeds the viewport`,
+  );
+  check(
+    audit.undersizedTargets.length === 0,
+    `${locale} ${viewport.width}: tap targets below 44px ${JSON.stringify(
+      audit.undersizedTargets,
+    )}`,
+  );
+  check(
+    audit.invalidHashLinks.length === 0,
+    `${locale} ${viewport.width}: invalid hash links ${audit.invalidHashLinks.join(
+      ", ",
+    )}`,
+  );
+  check(
+    audit.nestedInteractiveCount === 0,
+    `${locale} ${viewport.width}: nested interactive elements found`,
+  );
+  check(
+    !audit.headerCollision,
+    `${locale} ${viewport.width}: header regions collide`,
   );
   check(
     viewport.width <= 1180 ? audit.menuToggleVisible : audit.desktopNavVisible,
@@ -618,6 +766,18 @@ async function interactionAudit(browser) {
     "Mobile menu does not contain six language options",
   );
   check(
+    (await mobile.locator("[data-mobile-nav-link][aria-current='page']").count()) ===
+      1,
+    "Mobile navigation does not expose exactly one active section",
+  );
+  check(
+    await mobile
+      .locator("[data-mobile-nav-link]")
+      .first()
+      .evaluate((link) => link === document.activeElement),
+    "Focus did not enter the mobile menu",
+  );
+  check(
     await mobile.locator("body").evaluate((body) => body.classList.contains("menu-open")),
     "Body scrolling was not locked while the mobile menu was open",
   );
@@ -630,6 +790,19 @@ async function interactionAudit(browser) {
     await menuToggle.evaluate((button) => button === document.activeElement),
     "Focus did not return to the mobile menu trigger",
   );
+  await menuToggle.click();
+  await mobile.setViewportSize({ width: 1280, height: 844 });
+  check(
+    (await menuToggle.getAttribute("aria-expanded")) === "false",
+    "Mobile menu did not close after switching to desktop navigation",
+  );
+  check(
+    !(await mobile
+      .locator("body")
+      .evaluate((body) => body.classList.contains("menu-open"))),
+    "Body remained locked after switching to desktop navigation",
+  );
+  await mobile.setViewportSize({ width: 390, height: 844 });
 
   await mobile.evaluate(() => {
     window.open = () => null;
@@ -647,6 +820,90 @@ async function interactionAudit(browser) {
   );
   check(mobileErrors.length === 0, `Mobile interactions: ${mobileErrors.join(" | ")}`);
   await mobile.close();
+}
+
+async function reportedDarkHeroAudit(browser) {
+  const cases = [
+    { locale: "it", viewport: { width: 1809, height: 805 } },
+    { locale: "tr", viewport: { width: 1628, height: 814 } },
+  ];
+
+  for (const { locale, viewport } of cases) {
+    const context = await browser.newContext({ viewport });
+    await context.addInitScript(() => {
+      localStorage.setItem("hixhame-tina-theme", "dark");
+    });
+    const page = await context.newPage();
+    const errors = attachErrorCapture(page);
+    await page.goto(`${baseUrl}/${locale}/`, { waitUntil: "networkidle" });
+    const audit = await page.evaluate(() => {
+      const heading = document.querySelector(".hero h1");
+      const panel = document.querySelector(".hero-panel");
+      const image = document.querySelector(".hero-image-wrap");
+      if (!heading || !panel || !image) return null;
+      const panelBox = panel.getBoundingClientRect();
+      const imageBox = image.getBoundingClientRect();
+      const range = document.createRange();
+      range.selectNodeContents(heading);
+      const lines = [...range.getClientRects()];
+      return {
+        theme: document.documentElement.dataset.theme,
+        lineCount: lines.length,
+        linesInsidePanel: lines.every(
+          (box) =>
+            box.left >= panelBox.left - 1 &&
+            box.right <= panelBox.right + 1 &&
+            box.top >= panelBox.top - 1 &&
+            box.bottom <= panelBox.bottom + 1,
+        ),
+        linesBeforeImage: lines.every((box) => box.right <= imageBox.left - 1),
+        titleVisibleAtEdge: lines.every((box) => {
+          const target = document.elementFromPoint(
+            Math.max(box.left + 1, box.right - 2),
+            box.top + box.height / 2,
+          );
+          return target === heading || heading.contains(target);
+        }),
+        clipped:
+          heading.scrollWidth > heading.clientWidth + 1 ||
+          heading.scrollHeight > heading.clientHeight + 1,
+      };
+    });
+
+    check(Boolean(audit), `${locale} dark hero markup is incomplete`);
+    if (audit) {
+      check(audit.theme === "dark", `${locale} dark theme did not initialize`);
+      check(
+        audit.linesInsidePanel,
+        `${locale} dark hero title exceeds the copy panel`,
+      );
+      check(
+        audit.linesBeforeImage,
+        `${locale} dark hero title crosses into the image`,
+      );
+      check(
+        audit.titleVisibleAtEdge,
+        `${locale} dark hero title is painted beneath another layer`,
+      );
+      check(!audit.clipped, `${locale} dark hero title is internally clipped`);
+      check(
+        audit.lineCount > 0 && audit.lineCount <= 7,
+        `${locale} dark hero title has ${audit.lineCount} lines`,
+      );
+    }
+    check(errors.length === 0, `${locale} dark hero: ${errors.join(" | ")}`);
+
+    if (!noScreenshots) {
+      await page.screenshot({
+        path: path.join(
+          screenshotDir,
+          `${locale}-dark-${viewport.width}x${viewport.height}.png`,
+        ),
+        fullPage: false,
+      });
+    }
+    await context.close();
+  }
 }
 
 async function redirectAudit(browser) {
@@ -750,7 +1007,13 @@ async function main() {
         for (const viewport of selectedViewports) {
           const screenshot =
             (viewport.width === 390 && viewport.height === 844) ||
-            (viewport.width === 1440 && viewport.height === 1000);
+            (viewport.width === 1440 && viewport.height === 1000) ||
+            (locale === "it" &&
+              viewport.width === 1809 &&
+              viewport.height === 805) ||
+            (locale === "tr" &&
+              viewport.width === 1628 &&
+              viewport.height === 814);
           await localeAudit(auditContext, locale, viewport, screenshot);
         }
       }
@@ -758,6 +1021,7 @@ async function main() {
     await auditContext.close();
     if (!layoutOnly) {
       await interactionAudit(browser);
+      await reportedDarkHeroAudit(browser);
       await redirectAudit(browser);
       await staticSeoAudit();
       await notFoundAudit(browser);

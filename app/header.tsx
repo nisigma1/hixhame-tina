@@ -32,8 +32,7 @@ export function Header({ locale, messages }: HeaderProps) {
           href={`/${locale}/#ballina`}
           aria-label={messages.common.brandLabel}
         >
-          <BrandLogo className="brand-logo brand-logo-full" />
-          <BrandLogo className="brand-logo-compact" compact />
+          <BrandLogo className="brand-logo" responsive />
         </a>
 
         <nav className="desktop-nav" aria-label={messages.common.mainNavigation}>
@@ -108,7 +107,11 @@ export function Header({ locale, messages }: HeaderProps) {
         hidden
       >
         {navItems.map(([label, hash]) => (
-          <a href={`/${locale}/${hash}`} key={hash}>
+          <a
+            href={`/${locale}/${hash}`}
+            data-mobile-nav-link={hash}
+            key={hash}
+          >
             {label}
           </a>
         ))}
@@ -243,6 +246,11 @@ const headerScript = `
     );
     mobileNav.hidden = !open;
     document.body.classList.toggle('menu-open', open);
+    if (open) {
+      requestAnimationFrame(() => {
+        mobileNav.querySelector('a[href]')?.focus({ preventScroll: true });
+      });
+    }
     if (!open && restoreFocus) menuToggle.focus({ preventScroll: true });
   };
   menuToggle.addEventListener('click', () => setMenuOpen(mobileNav.hidden));
@@ -250,7 +258,28 @@ const headerScript = `
     if (event.target.closest('a')) setMenuOpen(false);
   });
   document.addEventListener('keydown', (event) => {
-    if (event.key === 'Escape' && !mobileNav.hidden) setMenuOpen(false, true);
+    if (event.key === 'Escape' && !mobileNav.hidden) {
+      setMenuOpen(false, true);
+      return;
+    }
+    if (event.key !== 'Tab' || mobileNav.hidden) return;
+    const focusable = [
+      menuToggle,
+      ...mobileNav.querySelectorAll('a[href], button:not([disabled])'),
+    ].filter((element) => !element.hidden);
+    const first = focusable[0];
+    const last = focusable[focusable.length - 1];
+    if (event.shiftKey && document.activeElement === first) {
+      event.preventDefault();
+      last?.focus();
+    } else if (!event.shiftKey && document.activeElement === last) {
+      event.preventDefault();
+      first?.focus();
+    }
+  });
+  const desktopMenuQuery = window.matchMedia('(min-width: 1181px)');
+  desktopMenuQuery.addEventListener('change', (event) => {
+    if (event.matches && !mobileNav.hidden) setMenuOpen(false);
   });
 
   const selectors = Array.from(document.querySelectorAll('[data-language-selector]'));
@@ -301,6 +330,9 @@ const headerScript = `
         items[event.key === 'Home' ? 0 : items.length - 1]?.focus();
       }
     });
+    selector.addEventListener('focusout', (event) => {
+      if (!selector.contains(event.relatedTarget)) setOpen(false);
+    });
   });
 
   document.addEventListener('keydown', (event) => {
@@ -339,8 +371,12 @@ const headerScript = `
   });
 
   const links = Array.from(document.querySelectorAll('[data-nav-link]'));
-  const activate = (hash) => links.forEach((link) => {
-    const active = link.dataset.navLink === hash;
+  const mobileLinks = Array.from(
+    document.querySelectorAll('[data-mobile-nav-link]'),
+  );
+  const activate = (hash) => [...links, ...mobileLinks].forEach((link) => {
+    const target = link.dataset.navLink || link.dataset.mobileNavLink;
+    const active = target === hash;
     link.classList.toggle('active', active);
     if (active) link.setAttribute('aria-current', 'page');
     else link.removeAttribute('aria-current');

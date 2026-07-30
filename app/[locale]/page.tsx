@@ -173,7 +173,7 @@ export default async function LocalizedHome({
             <picture>
               <source
                 srcSet={`${BUSINESS.heroImageMobile} 800w, ${BUSINESS.heroImage} 1280w`}
-                sizes="(max-width: 820px) 100vw, 56vw"
+                sizes="(max-width: 980px) 100vw, 52vw"
               />
               <Image
                 className="hero-image"
@@ -182,10 +182,10 @@ export default async function LocalizedHome({
                 fill
                 loading="eager"
                 fetchPriority="high"
-                sizes="(max-width: 1120px) 100vw, 56vw"
+                sizes="(max-width: 980px) 100vw, 52vw"
               />
             </picture>
-            <div className="image-wash" />
+            <div className="image-wash" aria-hidden="true" />
             <Botanical className="hero-leaf" />
           </div>
         </section>
@@ -293,15 +293,6 @@ export default async function LocalizedHome({
                   />
                 ))}
               </div>
-              <div className="process-image">
-                <Image
-                  src="/images/hixhame-room-cups-900.webp"
-                  alt={messages.process.imageAlt}
-                  fill
-                  loading="lazy"
-                  sizes="(max-width: 820px) 100vw, 37vw"
-                />
-              </div>
             </div>
           </div>
         </section>
@@ -371,7 +362,7 @@ export default async function LocalizedHome({
       <footer className="site-footer">
         <div className="section-shell footer-grid">
           <div className="footer-brand">
-            <BrandLogo className="footer-logo-svg" />
+            <BrandLogo className="footer-logo-svg" loading="lazy" />
             <span className="footer-brand-statement">
               {messages.common.womenOnly}
             </span>
