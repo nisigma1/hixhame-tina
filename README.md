@@ -37,5 +37,6 @@ The production build is exported to `.next-production`.
 
 ## Hosting
 
-The production domain is served by Cloudflare Pages. The `main` branch is the
-source of truth for the website.
+The production domain is served by Cloudflare Pages. Pushes to the `main`
+branch are built and deployed automatically through the
+`hixhame-tina-github` Pages project.
