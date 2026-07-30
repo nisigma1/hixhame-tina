@@ -1,17 +1,17 @@
 import { Manrope, Newsreader } from "next/font/google";
 
-const display = Newsreader({
-  variable: "--font-newsreader",
+const manrope = Manrope({
+  variable: "--font-sans",
   subsets: ["latin", "latin-ext"],
-  weight: ["400", "500", "600"],
   display: "swap",
+  preload: true,
 });
 
-const body = Manrope({
-  variable: "--font-manrope",
+const newsreader = Newsreader({
+  variable: "--font-display",
   subsets: ["latin", "latin-ext"],
-  weight: ["400", "500", "600", "700"],
   display: "swap",
+  preload: true,
 });
 
-export const fontVariables = `${display.variable} ${body.variable}`;
+export const fontVariables = `${manrope.variable} ${newsreader.variable}`;

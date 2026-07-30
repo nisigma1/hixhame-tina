@@ -104,7 +104,11 @@ export default async function LocaleLayout({
   `;
 
   return (
-    <html lang={locale} suppressHydrationWarning>
+    <html
+      className={fontVariables}
+      lang={locale}
+      suppressHydrationWarning
+    >
       <head>
         <script dangerouslySetInnerHTML={{ __html: themeBootScript }} />
         <script dangerouslySetInnerHTML={{ __html: localeCookieScript }} />
@@ -112,10 +116,12 @@ export default async function LocaleLayout({
           rel="preload"
           as="image"
           href={BUSINESS.heroImage}
+          imageSrcSet={`${BUSINESS.heroImageMobile} 800w, ${BUSINESS.heroImage} 1280w`}
+          imageSizes="(max-width: 820px) 100vw, 56vw"
           fetchPriority="high"
         />
       </head>
-      <body className={fontVariables}>{children}</body>
+      <body>{children}</body>
     </html>
   );
 }

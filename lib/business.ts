@@ -9,6 +9,7 @@ export const BUSINESS = {
   instagramHandle: "@hixhametina",
   instagramUrl: "https://www.instagram.com/hixhametina/",
   heroImage: "/images/hixhame-cups-hero-1280.webp",
+  heroImageMobile: "/images/hixhame-cups-hero-800.webp",
 } as const;
 
 export function whatsappUrl(message: string) {

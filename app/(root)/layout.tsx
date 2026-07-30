@@ -29,11 +29,15 @@ export default function RootRedirectLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="sq" suppressHydrationWarning>
+    <html
+      className={fontVariables}
+      lang="sq"
+      suppressHydrationWarning
+    >
       <head>
         <script dangerouslySetInnerHTML={{ __html: themeBootScript }} />
       </head>
-      <body className={fontVariables}>{children}</body>
+      <body>{children}</body>
     </html>
   );
 }

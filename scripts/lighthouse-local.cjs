@@ -82,6 +82,9 @@ function summarize(reportPath) {
   const scripts = audits["resource-summary"]?.details?.items?.find(
     (item) => item.resourceType === "script",
   );
+  const fonts = audits["resource-summary"]?.details?.items?.find(
+    (item) => item.resourceType === "font",
+  );
   return {
     url: report.finalDisplayedUrl,
     scores: Object.fromEntries(
@@ -101,6 +104,8 @@ function summarize(reportPath) {
     transferredBytes: audits["total-byte-weight"]?.numericValue,
     scriptRequests: scripts?.requestCount || 0,
     scriptBytes: scripts?.transferSize || 0,
+    fontRequests: fonts?.requestCount || 0,
+    fontBytes: fonts?.transferSize || 0,
   };
 }
 

@@ -170,14 +170,21 @@ export default async function LocalizedHome({
             </p>
           </div>
           <div className="hero-image-wrap">
-            <Image
-              className="hero-image"
-              src={BUSINESS.heroImage}
-              alt={messages.hero.imageAlt}
-              fill
-              priority
-              sizes="(max-width: 1120px) 100vw, 56vw"
-            />
+            <picture>
+              <source
+                srcSet={`${BUSINESS.heroImageMobile} 800w, ${BUSINESS.heroImage} 1280w`}
+                sizes="(max-width: 820px) 100vw, 56vw"
+              />
+              <Image
+                className="hero-image"
+                src={BUSINESS.heroImage}
+                alt={messages.hero.imageAlt}
+                fill
+                loading="eager"
+                fetchPriority="high"
+                sizes="(max-width: 1120px) 100vw, 56vw"
+              />
+            </picture>
             <div className="image-wash" />
             <Botanical className="hero-leaf" />
           </div>
@@ -361,16 +368,20 @@ export default async function LocalizedHome({
         </section>
       </main>
 
-      <footer>
+      <footer className="site-footer">
         <div className="section-shell footer-grid">
           <div className="footer-brand">
             <BrandLogo className="footer-logo-svg" />
-            <span>{messages.common.womenOnly}</span>
+            <span className="footer-brand-statement">
+              {messages.common.womenOnly}
+            </span>
           </div>
-          <div>
+          <div className="footer-column footer-contact">
             <h3>{messages.footer.contactTitle}</h3>
             <a href={BUSINESS.phoneHref}>{BUSINESS.phoneDisplay}</a>
-            <span>{messages.common.location}</span>
+            <span className="footer-location">
+              {messages.common.location}
+            </span>
             <a
               href={BUSINESS.instagramUrl}
               target="_blank"
@@ -379,7 +390,10 @@ export default async function LocalizedHome({
               {BUSINESS.instagramHandle}
             </a>
           </div>
-          <div>
+          <nav
+            className="footer-column footer-navigation"
+            aria-label={messages.footer.navigationTitle}
+          >
             <h3>{messages.footer.navigationTitle}</h3>
             <a href={`/${locale}/#rreth-hixhames`}>
               {messages.footer.aboutLink}
@@ -390,7 +404,7 @@ export default async function LocalizedHome({
             <a href={`/${locale}/#pyetje`}>
               {messages.footer.questionsLink}
             </a>
-          </div>
+          </nav>
           <p className="footer-disclaimer">
             {messages.footer.disclaimer}
           </p>

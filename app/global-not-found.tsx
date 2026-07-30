@@ -40,12 +40,16 @@ const translations = {
 
 export default function GlobalNotFound() {
   return (
-    <html lang="sq" suppressHydrationWarning>
+    <html
+      className={fontVariables}
+      lang="sq"
+      suppressHydrationWarning
+    >
       <head>
         <title>{`${sqMessages.notFound.title} | Hixhame Tina`}</title>
         <script dangerouslySetInnerHTML={{ __html: themeBootScript }} />
       </head>
-      <body className={fontVariables}>
+      <body>
         <main className="locale-redirect not-found">
           <BrandLogo className="locale-redirect-logo" />
           <p className="section-kicker" aria-hidden="true">

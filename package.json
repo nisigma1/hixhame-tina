@@ -12,6 +12,7 @@
     "i18n:audit": "node scripts/i18n-audit.cjs",
     "lighthouse": "node scripts/lighthouse-local.cjs",
     "qa": "node scripts/qa-local.cjs",
+    "typography:audit": "node scripts/typography-audit.cjs",
     "smoke": "node scripts/live-smoke.cjs"
   },
   "dependencies": {

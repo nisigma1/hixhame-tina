@@ -162,6 +162,72 @@ async function localeAudit(context, locale, viewport, screenshot = false) {
           "button, a.button, .mobile-booking a, [data-language-trigger]",
         ),
       ].filter(visible);
+      const computed = (selector) => {
+        const element = document.querySelector(selector);
+        return element ? getComputedStyle(element) : null;
+      };
+      const functionalSelectors = [
+        ".desktop-nav a",
+        ".button",
+        ".language-trigger",
+        ".language-menu a",
+        ".trust-list li",
+        ".about-detail",
+        ".benefit-row h3",
+        ".benefit-row p",
+        ".disclaimer",
+        ".process-step > span",
+        ".process-step h3",
+        ".process-step p",
+        ".care-copy li",
+        ".care-note p",
+        ".care-note a",
+        ".faq-item button",
+        ".faq-panel p",
+        ".phone-link",
+        ".booking-actions span",
+        ".site-footer h3",
+        ".site-footer a",
+        ".footer-disclaimer",
+        ".footer-bottom",
+        ".mobile-nav > a:not(.button)",
+        ".mobile-language-grid a",
+      ];
+      const functionalFontMismatches = functionalSelectors
+        .map((selector) => ({
+          selector,
+          family: computed(selector)?.fontFamily || "",
+        }))
+        .filter(({ family }) => !family.includes("Manrope"));
+      const displayFontMismatches = [...document.querySelectorAll("h1, h2")]
+        .map((element) => ({
+          text: element.textContent?.trim().slice(0, 60),
+          family: getComputedStyle(element).fontFamily,
+        }))
+        .filter(({ family }) => !family.includes("Newsreader"));
+      const smallParagraphs = [
+        ...document.querySelectorAll(
+          "p:not(.eyebrow):not(.section-kicker):not(.footer-brand-statement)",
+        ),
+      ]
+        .filter(visible)
+        .map((element) => ({
+          text: element.textContent?.trim().slice(0, 60),
+          size: Number.parseFloat(getComputedStyle(element).fontSize),
+        }))
+        .filter(({ size }) => size < 15);
+      const weight300 = [...document.querySelectorAll("body *")]
+        .filter(
+          (element) =>
+            visible(element) &&
+            element.children.length === 0 &&
+            element.textContent?.trim(),
+        )
+        .map((element) => ({
+          text: element.textContent.trim().slice(0, 60),
+          weight: Number.parseInt(getComputedStyle(element).fontWeight, 10),
+        }))
+        .filter(({ weight }) => Number.isFinite(weight) && weight < 400);
       const overflowElements = [...document.querySelectorAll("body *")]
         .map((element) => {
           const box = element.getBoundingClientRect();
@@ -251,6 +317,23 @@ async function localeAudit(context, locale, viewport, screenshot = false) {
         menuToggleVisible: visible(document.querySelector("[data-menu-toggle]")),
         desktopNavVisible: visible(document.querySelector(".desktop-nav")),
         headerHeight: Math.round(header?.height || 0),
+        bodyFont: getComputedStyle(document.body).fontFamily,
+        fontsReady:
+          document.fonts.check("400 16px Manrope") &&
+          document.fonts.check("500 64px Newsreader"),
+        functionalFontMismatches,
+        displayFontMismatches,
+        smallParagraphs,
+        weight300,
+        footerLinkSize: Number.parseFloat(
+          computed(".site-footer a")?.fontSize || "0",
+        ),
+        footerDisclaimerSize: Number.parseFloat(
+          computed(".footer-disclaimer")?.fontSize || "0",
+        ),
+        footerBottomSize: Number.parseFloat(
+          computed(".footer-bottom")?.fontSize || "0",
+        ),
         activeLocale,
       };
     },
@@ -335,6 +418,44 @@ async function localeAudit(context, locale, viewport, screenshot = false) {
   check(
     viewport.width <= 1180 ? audit.menuToggleVisible : audit.desktopNavVisible,
     `${locale} ${viewport.width}: responsive navigation mode is incorrect`,
+  );
+  check(
+    audit.bodyFont.includes("Manrope"),
+    `${locale} ${viewport.width}: body font is ${audit.bodyFont}`,
+  );
+  check(
+    audit.fontsReady,
+    `${locale} ${viewport.width}: Manrope or Newsreader did not load`,
+  );
+  check(
+    audit.functionalFontMismatches.length === 0,
+    `${locale} ${viewport.width}: functional font mismatch ${JSON.stringify(
+      audit.functionalFontMismatches,
+    )}`,
+  );
+  check(
+    audit.displayFontMismatches.length === 0,
+    `${locale} ${viewport.width}: display font mismatch ${JSON.stringify(
+      audit.displayFontMismatches,
+    )}`,
+  );
+  check(
+    audit.smallParagraphs.length === 0,
+    `${locale} ${viewport.width}: paragraph below 15px ${JSON.stringify(
+      audit.smallParagraphs,
+    )}`,
+  );
+  check(
+    audit.weight300.length === 0,
+    `${locale} ${viewport.width}: readable text below weight 400 ${JSON.stringify(
+      audit.weight300,
+    )}`,
+  );
+  check(
+    audit.footerLinkSize >= 15 &&
+      audit.footerDisclaimerSize >= 14 &&
+      audit.footerBottomSize >= 14,
+    `${locale} ${viewport.width}: footer typography is below minimum size`,
   );
   if (screenshot && !noScreenshots) {
     await page.screenshot({
